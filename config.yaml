@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+ #url: 'https://status-page.eidam.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -24,16 +24,50 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
+  - id: sev1on-github-io
+    name: sev1on.github.io
     description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+    url: 'https://sev1on.github.io'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: mail-logicails-com
+    name: mail.logicails.com
+    description: 'Built for anything connected to the Internet.'
+    url: 'https://mail.logicails.com'
     method: GET
     expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+    
+  - id: vm1ss-purplesea-cyou
+    name: vm1ss.purplesea.cyou
+    description: 'Built for anything connected to the Internet.'
+    url: 'https://vm1ss.purplesea.cyou'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+ 
+   - id: vm2ss-purplesea-cyou
+    name: vm2ss.purplesea.cyou
+    description: 'Built for anything connected to the Internet.'
+    url: 'https://vm2ss.purplesea.cyou'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true 
+    
+   - id: vm3ss-purplesea-cyou
+    name: vm3ss.purplesea.cyou
+    description: 'Built for anything connected to the Internet.'
+    url: 'https://vm3ss.purplesea.cyou'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true  
+  
+  - id: vm4ss-purplesea-cyou
+    name: vm4ss-purplesea-cyou
+    description: 'Built for anything connected to the Internet.'
+    url: 'https://vm4ss-purplesea-cyou'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
